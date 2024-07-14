@@ -36,7 +36,7 @@ data = {
     "application_link": "https://admissions.dsuniversity.ac.in/",
     "contact": {
         "admissions_office": "1800 532 2222",
-        "support": "enquiry@dsuniversity.ac.in,
+        "support": "enquiry@dsuniversity.ac.in",
         "phone": "70944 58021,70944 58022"
     }
 }
