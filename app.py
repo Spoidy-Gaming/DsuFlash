@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, render_template
+import re
 
 app = Flask(__name__)
 
@@ -52,34 +53,34 @@ def chat():
     return jsonify(response)
 
 def get_response(query):
-    if "course fees" in query:
+    if re.search(r'\bcourse\b', query) and re.search(r'\bfee\b', query):
         return get_course_fees(query)
-    elif "course facilities" in query:
+    elif re.search(r'\bcourse\b', query) and re.search(r'\bfacilit(y|ies)\b', query):
         return get_course_facilities(query)
-    elif "hostel fees" in query:
+    elif re.search(r'\bhostel\b', query) and re.search(r'\bfee\b', query):
         return get_hostel_fees(query)
-    elif "hostel facilities" in query:
+    elif re.search(r'\bhostel\b', query) and re.search(r'\bfacilit(y|ies)\b', query):
         return get_hostel_facilities(query)
-    elif "infrastructure" in query:
+    elif re.search(r'\binfrastructure\b', query):
         return data['infrastructure']
-    elif "location" in query:
+    elif re.search(r'\blocation\b', query):
         return data['location']
-    elif "apply" in query or "admission" in query:
+    elif re.search(r'\bapply\b', query) or re.search(r'\badmission\b', query):
         return data['application_link']
-    elif "contact" in query:
+    elif re.search(r'\bcontact\b', query):
         return data['contact']
     else:
         return "Sorry, I don't understand that question."
 
 def get_course_fees(query):
     for course_key, course_info in data['courses'].items():
-        if course_info['name'].lower() in query:
+        if re.search(course_info['name'].lower(), query):
             return {course_info['name']: course_info['fees']}
     return "Course not found."
 
 def get_course_facilities(query):
     for course_key, course_info in data['courses'].items():
-        if course_info['name'].lower() in query:
+        if re.search(course_info['name'].lower(), query):
             return {course_info['name']: course_info['facilities']}
     return "Course not found."
 
