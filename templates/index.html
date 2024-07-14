@@ -65,6 +65,13 @@
             white-space: pre-wrap;
             word-wrap: break-word;
         }
+        .facilities-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .facilities-item {
+            margin-bottom: 10px;
+        }
         .footer {
             text-align: center;
             margin-top: 20px;
@@ -99,7 +106,12 @@
             .then(data => {
                 let responseElement = document.getElementById('response');
                 if (typeof data === 'object') {
-                    responseElement.innerHTML = '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+                    let html = '<ul class="facilities-list">';
+                    for (let key in data) {
+                        html += `<li class="facilities-item"><strong>${key}:</strong> ${data[key]}</li>`;
+                    }
+                    html += '</ul>';
+                    responseElement.innerHTML = html;
                 } else {
                     responseElement.textContent = data;
                 }
