@@ -65,7 +65,7 @@ def get_response(query):
         return data['infrastructure']
     elif re.search(r'\blocation\b', query):
         return data['location']
-    elif re.search(r'\bapply\b', query) or re.search(r'\badmission\b', query):
+    elif re.search(r'\bapplication\b', query) or re.search(r'\badmission\b', query):
         return data['application_link']
     elif re.search(r'\bcontact\b', query):
         return data['contact']
