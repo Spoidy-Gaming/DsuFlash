@@ -7,37 +7,37 @@ data = {
     "courses": {
         "course_1": {
             "name": "Computer Science",
-            "fees": "$1000",
+            "fees": "1,12,500",
             "facilities": "Lab access, Online resources"
         },
         "course_2": {
             "name": "Mechanical Engineering",
-            "fees": "$1500",
+            "fees": "50000",
             "facilities": "Workshops, Lab access"
         },
         "course_3": {
             "name": "Business Administration",
-            "fees": "$2000",
+            "fees": "85000",
             "facilities": "Library access, Case studies"
         }
     },
     "hostel": {
         "single_room": {
-            "fees": "$500 per month",
-            "facilities": "Single bed, Study table, Wi-Fi"
+            "fees": "85000",
+            "facilities": "Single bed, Study table, Wi-Fi,Common Bathroom"
         },
         "double_room": {
-            "fees": "$300 per month",
-            "facilities": "Two beds, Study tables, Wi-Fi"
+            "fees": "125000",
+            "facilities": "Two beds, Study tables,A/c, Wi-Fi,Attached Bathroom"
         }
     },
     "infrastructure": "Our college has state-of-the-art labs, libraries, sports facilities, and more.",
-    "location": "123 College St, College Town, CT 12345",
-    "application_link": "https://college.edu/apply",
+    "location": "NH-45, Trichy Chennai Trunk Road Samayapuram, near Samayapuram Toll Plaza, Tiruchirappalli, Tamil Nadu 621112.",
+    "application_link": "https://admissions.dsuniversity.ac.in/",
     "contact": {
-        "admissions_office": "admissions@college.edu",
-        "support": "support@college.edu",
-        "phone": "123-456-7890"
+        "admissions_office": "1800 532 2222",
+        "support": "enquiry@dsuniversity.ac.in,
+        "phone": "70944 58021,70944 58022"
     }
 }
 
