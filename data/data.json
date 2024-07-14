@@ -1,0 +1,37 @@
+{
+    "courses": {
+        "course_1": {
+            "name": "Computer Science",
+            "fees": "$1000",
+            "facilities": "Lab access, Online resources"
+        },
+        "course_2": {
+            "name": "Mechanical Engineering",
+            "fees": "$1500",
+            "facilities": "Workshops, Lab access"
+        },
+        "course_3": {
+            "name": "Business Administration",
+            "fees": "$2000",
+            "facilities": "Library access, Case studies"
+        }
+    },
+    "hostel": {
+        "single_room": {
+            "fees": "$500 per month",
+            "facilities": "Single bed, Study table, Wi-Fi"
+        },
+        "double_room": {
+            "fees": "$300 per month",
+            "facilities": "Two beds, Study tables, Wi-Fi"
+        }
+    },
+    "infrastructure": "Our college has state-of-the-art labs, libraries, sports facilities, and more.",
+    "location": "123 College St, College Town, CT 12345",
+    "application_link": "https://college.edu/apply",
+    "contact": {
+        "admissions_office": "admissions@college.edu",
+        "support": "support@college.edu",
+        "phone": "123-456-7890"
+    }
+}
