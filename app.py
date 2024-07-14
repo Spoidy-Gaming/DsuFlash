@@ -25,11 +25,11 @@ data = {
     "hostel": {
         "single_room": {
             "fees": "85000",
-            "facilities": "Single bed, Study table, Wi-Fi,Common Bathroom"
+            "facilities": "Single bed, Study table, Wi-Fi, Common Bathroom"
         },
         "double_room": {
             "fees": "125000",
-            "facilities": "Two beds, Study tables,A/c, Wi-Fi,Attached Bathroom"
+            "facilities": "Two beds, Study tables, A/c, Wi-Fi, Attached Bathroom"
         }
     },
     "infrastructure": "Our college has state-of-the-art labs, libraries, sports facilities, and more.",
