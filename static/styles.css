@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+}
+
+#chatForm {
+    margin: 20px 0;
+}
+
+#response {
+    margin-top: 20px;
+    white-space: pre-wrap;
+}
