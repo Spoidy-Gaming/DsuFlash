@@ -1,6 +1,6 @@
 # DsuFlash
 
-![Chatbot Demo](demo.gif)
+![Chatbot Demo](<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/S60CrN9iMxFlyp7uM8" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/chatbot-digitalesmarketing-marketing-S60CrN9iMxFlyp7uM8">via GIPHY</a></p>)
 
 ## Overview
 
@@ -20,8 +20,7 @@ To run the chatbot locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/college-info-chatbot.git
-   cd college-info-chatbot
+    git clone https://github.com/Spoidy-Gaming/DsuFlash
    ```
 
 2. **Install dependencies**:
@@ -69,4 +68,4 @@ Contributions are welcome! If you have ideas for improvements or find any issues
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the MIT License file for details.
