@@ -1,5 +1,6 @@
 # DsuFlash
-![](giphy.gif)
+![Animation - 1720946671749](https://github.com/user-attachments/assets/a1796ec2-1658-49c0-a3e2-56c4cffa9957)
+
 
 ## Overview
 
