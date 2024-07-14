@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Information Chatbot</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>College Information Chatbot</h1>
+    <form id="chatForm">
+        <label for="query">Ask a question:</label><br>
+        <input type="text" id="query" name="query" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="response"></div>
+    <script>
+        $(document).ready(function() {
+            $('#chatForm').on('submit', function(event) {
+                event.preventDefault();
+                var query = $('#query').val();
+                $.ajax({
+                    url: '/chat',
+                    type: 'POST',
+                    data: { query: query },
+                    success: function(response) {
+                        $('#response').html('<pre>' + JSON.stringify(response, null, 2) + '</pre>');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
